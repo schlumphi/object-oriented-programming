@@ -2,6 +2,6 @@
 #include "ship.hpp"
 
 auto main() -> int {
-    // auto ship = Ship();
+    auto ship = Ship();
     return 0;
 }
