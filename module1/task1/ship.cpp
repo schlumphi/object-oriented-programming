@@ -1,8 +1,6 @@
 #include "ship.hpp"
 
-Ship::Ship() {
-    id_ = -1;
-}
+Ship::Ship() : id_(-1) {}
 
 Ship::Ship(const int id, const std::string& name, const double speed, const size_t maxCrew, const uint64_t capacity)
     : id_(id), name_(name), speed_(speed), maxCrew_(maxCrew), capacity_(capacity) {}
