@@ -23,7 +23,7 @@ public:
         return *this;
     }
     auto operator-=(const int amount) -> Ship& {
-        if (amount > 0) {
+        if (amount > 0 && amount <= crew_) {
             crew_ -= amount;
         }
         return *this;
