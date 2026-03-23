@@ -33,5 +33,12 @@ int main() {
         std::cout << c->getName() << "\n";
     }
 
+    ship.unload(&hammer);
+    cargo = ship.cargo();
+    std::cout << "ship cargo:\n";
+    for (const auto& c : cargo) {
+        std::cout << c->getName() << "\n";
+    }
+
     return 0;
 }
