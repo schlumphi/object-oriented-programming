@@ -11,7 +11,7 @@ public:
     size_t getBasePrice() const override { return basePrice_; }
 
     Fruit& operator--() {
-        --amount_;
+        --timeToSpoil_;
         return *this;
     }
 
