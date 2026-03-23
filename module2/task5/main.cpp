@@ -10,5 +10,16 @@ int main() {
     --apple;
     std::cout << apple.getName() << ": basePrice: " << apple.getBasePrice() << " amount: " << apple.getAmount() << " price: " << apple.getPrice() << " \n";
 
+    auto cider = Alcohol{"cider", 3, 2, 5.5};
+    std::cout << cider.getName() << ": basePrice: " << cider.getBasePrice() << " amount: " << cider.getAmount() << " price: " << cider.getPrice() << " \n";
+    auto whiskey = Alcohol{"whiskey", 3, 2, 36};
+    std::cout << whiskey.getName() << ": basePrice: " << whiskey.getBasePrice() << " amount: " << whiskey.getAmount() << " price: " << whiskey.getPrice() << " \n";
+
+    auto hammer = Item("hammer", 1, 5, Item::Rarity::Common);
+    std::cout << hammer.getName() << ": basePrice: " << hammer.getBasePrice() << " amount: " << hammer.getAmount() << " price: " << hammer.getPrice() << " \n";
+
+    auto ruby = Item("ruby", 1, 5, Item::Rarity::Epic);
+    std::cout << ruby.getName() << ": basePrice: " << ruby.getBasePrice() << " amount: " << ruby.getAmount() << " price: " << ruby.getPrice() << " \n";
+
     return 0;
 }
