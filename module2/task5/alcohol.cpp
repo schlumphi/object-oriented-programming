@@ -4,8 +4,7 @@
 #include <iostream>
 
 Alcohol::Alcohol(const std::string& name, const size_t amount, const size_t basePrice, const double ethanolContent)
-    : Cargo(name, amount, basePrice), ethanolContent_(validateEthanolContent(ethanolContent)) {
-}
+    : Cargo(name, amount, basePrice), ethanolContent_(validateEthanolContent(ethanolContent)) {}
 
 double Alcohol::validateEthanolContent(const double ethanolContent) {
     if (ethanolContent <= 0.0 || ethanolContent > 96.0) {
